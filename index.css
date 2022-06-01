@@ -143,6 +143,13 @@ a{
     top:0;
     
 }
+.container2{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .container{
     min-height: 100vh;
@@ -165,7 +172,8 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    justify-content: space-between;
+   
+    justify-content: center;
 }
 #hero::after{
     content: "";
@@ -438,6 +446,32 @@ img{
     transform: scale(1.1);
 }
 @media only screen and (min-width:768px){
+    #header .hamburger{
+        display:none;
+    }
+    #header .nav-bar{
+      
+        justify-content: space-between;
+        
+       
+    }
+    #header {
+        background-color: rgb(43, 29, 29);
+       }
+ 
+       #header .nav-list ul {
+           position: initial;
+           display: block;
+           height: auto;
+           width: fit-content;
+           background-color: transparent;
+       }
+       #header .nav-list ul li{
+           display: inline-block;
+       }
+       #header .nav-list ul a::after{
+           display: none;
+       }
     #projects .project-item{
         flex-direction:row;
         height:400px;
@@ -498,6 +532,12 @@ img{
    #header {
     background-color: rgb(43, 29, 29);
    }
+   #header .nav-bar{
+    
+    justify-content: space-around;
+    
+   
+}
    #header .nav-list ul {
        position: initial;
        display: block;
