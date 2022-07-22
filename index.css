@@ -159,7 +159,7 @@ a{
     justify-content: center;
 }
 #hero{
-    background-image: url(img/image1.jpg);
+    background-image: url(img/hero1.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
